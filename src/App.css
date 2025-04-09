@@ -1,0 +1,80 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-title {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      line-height: 1;
+      font-size: 3.5em;
+      white-space: nowrap;
+  }
+  
+  .pause-text {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2em;
+      white-space: nowrap;
+  }
+  
+  .info-block {
+      position: absolute;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.2;
+      white-space: nowrap;
+  }
+  
+  .info-block .score-display {
+      margin-bottom: 0.5em;
+      font-size: 1.6em;
+      line-height: 1;
+  }
+  
+  .game-wrapper {
+      position: absolute;
+      overflow: hidden;
+      border: var(--border-thickness) solid white;
+      box-sizing: border-box;
+  }
+  
+  .selection-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 5;
+  }
+  .selection-overlay h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+  }
+  
+  /* New Styles for Pause Overlay */
+  .pause-overlay {
+      position: absolute;
+      inset: 0; /* Cover the entire viewport */
+      background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10; /* Ensure it's above game elements */
+  }
+  
+  /* Remove background from the specific PauseMenu container style if it exists */
+  /* .PauseMenu-container { background-color: transparent; } */
+  /* Note: The PauseMenu component itself will be centered by the overlay's flexbox */

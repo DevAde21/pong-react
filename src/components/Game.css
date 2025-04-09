@@ -1,0 +1,32 @@
+.game-board {
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    /* REMOVE box-shadow border simulation */
+    /* box-shadow: 0 0 0 var(--border-thickness) white; */
+    border-radius: 0;
+    /* Ensure it fills the wrapper */
+    width: 100%;
+    height: 100%;
+}
+
+/* Paddle, Ball, Center Line styles remain the same */
+.paddle { position: absolute; background-color: white; border-radius: 0; }
+.ball { position: absolute; background-color: white; border-radius: 0; }
+
+.center-line {
+    position: absolute; top: 0; height: 100%;
+    left: calc(50% - var(--half-border-thickness));
+    width: var(--border-thickness);
+    border-left: var(--border-thickness) dashed white;
+}
+
+.game-loading-overlay {
+   position: absolute;
+   inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: grey;
+   font-size: 1.2em;
+}
