@@ -147,7 +147,7 @@ function App() {
                     </div>
                     <div className="info-block" style={{ top: `${layout.infoBlockCenterY}px`, left: `${layout.infoBlockP1Left}px`, transform: 'translateY(-50%)', visibility: 'visible' }}>
                         <div className="score-display">{scores.p1}</div>
-                        <div className="controls-display"><div>PLAYER 1</div>{gameMode === GameMode.ONE_PLAYER ? 'W/S or UP / DOWN' : 'W / S'}</div>
+                        <div className="controls-display"><div>PLAYER 1</div>{gameMode === GameMode.ONE_PLAYER ? 'W / S or UP / DOWN' : 'W / S'}</div>
                     </div>
                     <div className="info-block" style={{ top: `${layout.infoBlockCenterY}px`, right: `${layout.infoBlockP2Right}px`, transform: 'translateY(-50%)', visibility: 'visible' }}>
                         <div className="score-display">{scores.p2}</div>
